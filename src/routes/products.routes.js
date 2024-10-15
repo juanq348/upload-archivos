@@ -1,4 +1,4 @@
-import { Router} from "express";
+import { Router } from "express";
 
 const productsRouter = Router();
 
@@ -8,4 +8,4 @@ productsRouter.post("/", (req,res) =>{
     res.status(201).json({msg:"Producto creado"});
 });
 
-export {productsRouter}
+export { productsRouter };
