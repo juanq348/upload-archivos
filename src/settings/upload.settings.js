@@ -17,7 +17,7 @@ const maxMb = 20;
 const limits = { fileSize: 1024 * 1024 * maxMb }; 
 
 const fileFilter = (req, file, cb) =>{
-    const fileTypes = /jpeg|jpg|png|gif|webp/; 
+    const fileTypes = /jpg|png/; 
 
     const allowExtName = fileTypes.test(path.extname(file.originalname))
 

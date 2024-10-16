@@ -18,7 +18,7 @@ app.use("/products", productsRouter);
 
 app.use((err, req, res, next) =>{
     console.error(err.stack);
-    if(err.message === "Solo debes subir imágenes (jpeg, jpg, png)"){
+    if(err.message === "Solo debes subir imágenes (jpg, png)"){
         return res.status(400).json({msg: err.message});
     }
     res.status(500).json({msg:"Error en el servidor"})
